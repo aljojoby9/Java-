@@ -1,0 +1,64 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #f0f0f0; /* Light grey */
+  padding: 15px 30px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header nav a {
+  margin-left: 15px;
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  border-top: 1px solid #444;
+  /* position: fixed; removed for flexbox layout */
+  /* bottom: 0; removed for flexbox layout */
+  /* width: 100%; removed for flexbox layout */
+}
+
+main {
+  flex-grow: 1; /* Takes available space between header and footer */
+  padding: 20px;
+  overflow-y: auto; /* Add scroll for content overflow */
+}
+
+/* Page specific padding */
+.page-container {
+  padding: 20px;
+}
+
+/* Placeholder component styling */
+.placeholder-component {
+  border: 1px dashed #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
