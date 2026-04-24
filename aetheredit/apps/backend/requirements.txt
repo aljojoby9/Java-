@@ -1,0 +1,21 @@
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+pydantic==2.6.3
+celery==5.3.6
+redis==5.0.1
+
+# AI/ML
+transformers==4.38.0
+torch==2.2.0
+torchaudio==2.2.0
+faster-whisper==1.0.0
+pyscenetect==0.6.3
+opencv-python-headless==4.9.0.80
+pillow==10.2.0
+
+# Video processing
+ffmpeg-python==0.2.0
+
+# Utilities
+python-multipart==0.0.9
+aiofiles==23.2.1
